@@ -1,0 +1,7 @@
+{
+  "name": "Free Mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
