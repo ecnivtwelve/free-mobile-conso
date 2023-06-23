@@ -3,6 +3,8 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-second-border-color: #e8e8e8;
+
   /** primary **/
   --ion-color-primary: #eb445a;
   --ion-color-primary-rgb: 235, 68, 90;
@@ -83,6 +85,8 @@ http://ionicframework.com/docs/theming/ */
    */
 
   body {
+    --ion-second-border-color: #55555999;
+
     --ion-color-primary: #ff4961;
     --ion-color-primary-rgb: 255, 73, 97;
     --ion-color-primary-contrast: #000000;

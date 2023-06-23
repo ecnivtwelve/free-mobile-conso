@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "test:e2e": "cypress run",
@@ -12,18 +12,31 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@capacitor/action-sheet": "^5.0.4",
     "@capacitor/app": "5.0.3",
     "@capacitor/core": "5.0.5",
-    "@capacitor/haptics": "5.0.4",
+    "@capacitor/dialog": "^5.0.4",
+    "@capacitor/haptics": "^5.0.4",
+    "@capacitor/ios": "^5.0.5",
     "@capacitor/keyboard": "5.0.4",
+    "@capacitor/splash-screen": "^5.0.4",
     "@capacitor/status-bar": "5.0.4",
     "@ionic/vue": "^7.0.0",
     "@ionic/vue-router": "^7.0.0",
+    "@lottiefiles/lottie-player": "^2.0.2",
+    "@lottiefiles/vue-lottie-player": "^1.1.0",
+    "axios": "^1.4.0",
+    "fetch-cookie": "^2.1.0",
     "ionicons": "^7.0.0",
+    "lucide-vue-next": "^0.248.0",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue-pincode-input": "^0.4.0",
+    "vue-router": "^4.1.6",
+    "vue3-pincode-input": "^0.0.1",
+    "xml2js": "^0.6.0"
   },
   "devDependencies": {
+    "@capacitor/assets": "^2.0.4",
     "@capacitor/cli": "5.0.5",
     "@vitejs/plugin-legacy": "^4.0.2",
     "@vitejs/plugin-vue": "^4.0.0",

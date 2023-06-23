@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router';
 
 import { IonicVue } from '@ionic/vue';
+import { SplashScreen } from '@capacitor/splash-screen';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
@@ -21,12 +22,27 @@ import '@ionic/vue/css/flex-utils.css';
 import '@ionic/vue/css/display.css';
 
 /* Theme variables */
+import './theme/fonts.css';
 import './theme/variables.css';
+import './theme/theme.css';
+
+import { isPlatform } from '@ionic/vue';
+let backButtonText = '';
+if (isPlatform('ios')) {
+  backButtonText = 'Retour';
+}
 
 const app = createApp(App)
-  .use(IonicVue)
+  .use(IonicVue, {
+    backButtonText: backButtonText,
+  })
   .use(router);
   
 router.isReady().then(() => {
   app.mount('#app');
+
+  // hide splash screen
+  setTimeout(async () => {
+    await SplashScreen.hide();
+  }, 200);
 });

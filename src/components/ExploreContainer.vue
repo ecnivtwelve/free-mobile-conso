@@ -1,7 +1,7 @@
 <template>
   <div id="container">
-    <strong>{{ name }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>Onglet indisponible pour le moment</strong>
+    <p>Veuillez attendre une future mise à jour pour bénéficier de {{ name }}.</p>
   </div>
 </template>
 
@@ -19,6 +19,7 @@ defineProps({
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  margin: auto 30px;
 }
 
 #container strong {

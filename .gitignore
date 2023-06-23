@@ -30,3 +30,17 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+
+ios/App/build
+ios/App/Pods
+ios/App/output
+ios/App/App/public
+ios/DerivedData
+ios/xcuserdata
+
+# Cordova plugins for Capacitor
+ios/capacitor-cordova-ios-plugins
+
+# Generated Config files
+ios/App/App/capacitor.config.json
+ios/App/App/config.xml
